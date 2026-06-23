@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DMPR – Licence Verification</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="topbar-left">
+      <div class="topbar-dept">
+        Republic of South Africa
+        <strong>Department of Mineral and Petroleum Resources</strong>
+      </div>
+    </div>
+    <div class="topbar-right">www.dmpr.gov.za</div>
+  </div>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-eyebrow">Official Licence Registry</div>
+    <h1>Mining &amp; Petroleum<br>Licence Verification</h1>
+    <p class="hero-sub">Verify the authenticity of a mining or petroleum licence issued by the DMPR</p>
+  </div>
+
+  <!-- Main -->
+  <div class="main">
+
+    <div class="search-card">
+      <div class="search-label">Enter Licence Details</div>
+      <div class="search-row">
+        <input class="search-input" id="search-input" type="text"
+          placeholder="Company name, Licence ID or Permit Number…" />
+        <button class="search-btn" onclick="doSearch()">Verify</button>
+      </div>
+      <div class="search-hint">You may search by company name, licence ID number, or permit number.</div>
+    </div>
+
+    <!-- Result -->
+    <div id="result-panel"></div>
+
+    <div class="divider"></div>
+
+    <div class="info-note">
+      <strong>Important Notice:</strong> This portal verifies licences registered in the DMPR database.
+      If a licence does not appear in our records, it may be fraudulent or not yet captured.
+      Report suspicious licences to <strong>enquiries@dmpr.gov.za</strong> or call <strong>012 444 3000</strong>.
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
